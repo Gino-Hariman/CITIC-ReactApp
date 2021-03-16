@@ -6,6 +6,7 @@ import {
   NavMenu,
   SocialMedia,
   SocialLink,
+  Social,
 } from "./FooterElements";
 import facebook from "../../assets/images/social/facebook.png";
 import youtube from "../../assets/images/social/youtube.png";
@@ -14,6 +15,9 @@ import twitter from "../../assets/images/social/twitter.png";
 import instagram from "../../assets/images/social/instagram.png";
 
 const Footer = () => {
+  const test = (event) => {
+    event.preventDefault();
+  };
   return (
     <Container>
       <Nav>
@@ -48,11 +52,10 @@ const Footer = () => {
         <SocialLink>
           <img src={youtube} alt="" />
         </SocialLink>
-        <SocialLink>
-          <a href="https://www.instagram.com/citic.id/" target="_blank">
-            <img src={instagram} alt="" />
-          </a>
-        </SocialLink>
+
+        <Social target="_blank" href="https://www.instagram.com/citic.id/">
+          <img src={instagram} alt="" />
+        </Social>
       </SocialMedia>
     </Container>
   );

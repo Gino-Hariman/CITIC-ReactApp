@@ -65,6 +65,10 @@ export const SocialLink = styled(Link).attrs({
   }
 `;
 
+export const Social = styled.a.attrs({
+  className: `mr-10 font-bold text-black hover:text-yellow-500 z-10`,
+})``;
+
 export const NavLink = styled(Link).attrs({
   className: " mr-16 font-bold text-black hover:text-yellow-500 z-10 ",
 })``;
