@@ -32,7 +32,8 @@ export const Section = styled.div.attrs({
 `;
 
 export const Content = styled.section.attrs({
-  className: `text-black pr-6 xl:pr-28 2xl:pr-52 md:pr-0 sm:pr-12 font-sans h-full col-span-2 md:col-span-2 md:w-full flex flex-col justify-center`,
+  className: `text-black box-border pr-2 sm:pr-6 xl:pr-28 2xl:pr-52 md:pr-0 sm:pr-12 font-sans 
+  h-full col-span-2 md:col-span-2 md:w-full flex flex-col justify-center`,
 })`
   & {
     h1 {

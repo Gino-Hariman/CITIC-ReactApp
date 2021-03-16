@@ -19,7 +19,7 @@ export const Section = styled.div.attrs({
   xl:top-40 xl:left-36 xl:h-3/5 xl:w-5/12 
   lg:top-36 lg:left-32 lg:h-3/5 lg:w-5/12 
   md:w-96 md:left-16 
-  sm:left-20 sm:bg-red-200 sm:w-80`,
+  sm:left-20 sm:w-80`,
 })`
   & {
     h1 {
@@ -59,15 +59,22 @@ export const Section = styled.div.attrs({
         background-color: white;
       }
 
-      @media only screen and (max-width: 700px) {
+      @media only screen and (min-width: 451px) {
         content: "";
         display: block;
-        width: 11%;
+        width: 15%;
         height: 2px;
         position: absolute;
-        right: 5%;
+        right: 0%;
         top: 50%;
         background-color: white;
+      }
+
+      @media only screen and (max-width: 450px) {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
       }
     }
     p {

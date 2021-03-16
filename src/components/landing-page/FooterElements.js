@@ -82,7 +82,7 @@ export const Social = styled.a.attrs({
 
 export const NavLink = styled(Link).attrs({
   className: `mr-6 sm:mr-16 font-bold text-black hover:text-yellow-500 z-10
-  flex flex-col items-center bg-red-200 sm:inline-block`,
+  flex flex-col items-center sm:inline-block`,
 })``;
 export const NavMenu = styled.div.attrs({
   className: `md:ml-auto flex flex-wrap items-center md:mt-0 md:text-base sm:text-sm mt-4 
