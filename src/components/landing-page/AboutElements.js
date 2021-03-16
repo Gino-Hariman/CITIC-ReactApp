@@ -7,7 +7,7 @@ export const Container = styled.div.attrs({
 })`
   & {
     img {
-      ${tw`h-64 min-h-0 md:h-full w-full`}
+      ${tw`object-fill h-64 min-h-0 md:h-full w-full`}
     }
   }
 `;
