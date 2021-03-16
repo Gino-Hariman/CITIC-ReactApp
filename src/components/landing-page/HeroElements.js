@@ -15,7 +15,7 @@ export const Container = styled.div.attrs({
 `;
 
 export const Section = styled.div.attrs({
-  className: `h-auto text-white font-sans w-64 absolute top-28 left-4 select-none pr-2
+  className: `h-auto text-white font-sans sm:w-64 w-60 absolute top-28 left-4 select-none pr-2
   xl:top-40 xl:left-36 xl:h-3/5 xl:w-5/12 
   lg:top-36 lg:left-32 lg:h-3/5 lg:w-5/12 
   md:w-96 md:left-16 
@@ -58,9 +58,19 @@ export const Section = styled.div.attrs({
         top: 50%;
         background-color: white;
       }
+      @media only screen and (max-width: 500px) {
+        content: "";
+        display: block;
+        width: 11%;
+        height: 2px;
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        background-color: white;
+      }
     }
     p {
-      ${tw`font-medium mb-6 leading-snug text-base
+      ${tw`font-medium mb-6 text-sm leading-tight sm:leading-snug sm:text-base
       xl:pr-20
       xl:font-bold xl:text-2xl xl:leading-relaxed 
       lg:font-semibold lg:text-xl lg:tracking-wide lg:leading-relaxed lg:pr-12 lg:whitespace-normal

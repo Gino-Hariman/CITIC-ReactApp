@@ -44,15 +44,15 @@ export const SectionBottom = styled.div.attrs({
 `;
 
 export const BottomContent = styled.section.attrs({
-  className: `absolute min-w-min w-3/5 sm:w-3/4 sm:pr-10 px-6 py-4 
+  className: `absolute min-w-min w-3/4 sm:w-3/4 sm:pr-10 px-6 py-4
   md:w-2/5 md:inset-5 md:h-auto text-white flex flex-col justify-center lg:mx-56 md:mx-36`,
 })`
   & {
     h1 {
-      ${tw`text-xs sm:text-sm mb-4 md:text-base lg:mb-10 lg:font-medium`}
+      ${tw`text-xs font-light mb-3 sm:font-normal sm:text-sm sm:mb-4 md:text-base lg:mb-10 lg:font-medium`}
     }
     p {
-      ${tw`text-sm font-medium mb-4 sm:text-base md:text-xl
+      ${tw`text-xs sm:text-sm font-medium mb-3 sm:mb-4 sm:text-base md:text-xl
        md:font-normal lg:mb-10 lg:text-2xl md:font-bold`}
     }
   }

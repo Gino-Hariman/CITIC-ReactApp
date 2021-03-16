@@ -3,7 +3,7 @@ import tw from "tailwind-styled-components";
 
 export const Buttons = styled.button.attrs({
   className: `bg-white shadow-md text-xs md:tracking-wider lg:text-base text-black active:bg-yellow-500 
-  font-extrabold px-4 md:py-3 py-3 rounded  hover:shadow-sm outline-none 
+  sm:font-extrabold font-bold px-4 md:py-3 sm:py-3 py-3 rounded  hover:shadow-sm outline-none 
   focus:outline-none hover:bg-yellow-300`,
 })``;
 

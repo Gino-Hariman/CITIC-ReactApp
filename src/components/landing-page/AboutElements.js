@@ -26,7 +26,7 @@ export const Section = styled.div.attrs({
 })`
   & {
     img {
-      ${tw`h-full w-full lg:w-7/12 xl:h-96 lg:h-80 md:col-span-2 md:w-1/2 md:h-56`}
+      ${tw`object-contain py-8 sm:py-0 sm:h-full sm:w-full lg:w-7/12 xl:h-96 lg:h-80 md:col-span-2 md:w-1/2 md:h-56`}
     }
   }
 `;
@@ -36,11 +36,11 @@ export const Content = styled.section.attrs({
 })`
   & {
     h1 {
-      ${tw`font-bold text-sm pb-4 tracking-tight xl:mb-6 lg:mb-3 lg:text-2xl md:text-lg xl:text-3xl`}
+      ${tw`font-bold sm:text-sm text-xs pb-4 tracking-tight xl:mb-6 lg:mb-3 lg:text-2xl md:text-lg xl:text-3xl`}
     }
     ,
     p {
-      ${tw`text-xs leading-relaxed lg:text-base lg:tracking-wide lg:leading-loose`}
+      ${tw`text-xs sm:leading-relaxed leading-4 lg:text-base lg:tracking-wide lg:leading-loose`}
     }
   }
 `;

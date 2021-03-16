@@ -23,8 +23,8 @@ const Footer = () => {
       <Nav>
         <NavLink to="/">
           {/* <img className="ml-3" src={Logo} alt="logo citic" /> */}
-          <h1 className="ml-3 text-3xl font-bold">CITIC</h1>
-          <p className="ml-3 pt-2 font-normal">Cinema Ticket</p>
+          <h1 className="sm:ml-3 sm:text-3xl text-2xl font-bold">CITIC</h1>
+          <p className="sm:ml-3 pt-2 font-normal sm:text-sm text-base ">Cinema Ticket</p>
         </NavLink>
         <NavMenu>
           <NavLink to="/tentang-citic" activeStyle>
@@ -40,18 +40,18 @@ const Footer = () => {
       </Nav>
 
       <SocialMedia>
-        <SocialLink>
+        <Social>
           <img src={facebook} alt="" />
-        </SocialLink>
-        <SocialLink>
+        </Social>
+        <Social>
           <img src={linkedin} alt="" />
-        </SocialLink>
-        <SocialLink>
+        </Social>
+        <Social>
           <img src={twitter} alt="" />
-        </SocialLink>
-        <SocialLink>
+        </Social>
+        <Social>
           <img src={youtube} alt="" />
-        </SocialLink>
+        </Social>
 
         <Social target="_blank" href="https://www.instagram.com/citic.id/">
           <img src={instagram} alt="" />

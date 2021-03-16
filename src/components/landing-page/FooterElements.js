@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Container = styled.section.attrs({
-  className: `bg-white text-black w-full h-auto z-20 box-border absolute`,
+  className: `overflow-x-hidden text-black w-full h-auto z-20 box-border absolute`,
 })``;
 
 export const Nav = styled.div.attrs({
@@ -12,7 +12,7 @@ export const Nav = styled.div.attrs({
 })``;
 
 export const SocialMedia = styled.div.attrs({
-  className: `float-right  flex mb-10 mt-12 mr-20`,
+  className: `float-right flex sm:mb-10 mb-6 sm:mt-12 mt-10 md:mr-20 mr-8`,
 })`
   &:before {
     @media only screen and (min-width: 1025px) {
@@ -48,6 +48,17 @@ export const SocialMedia = styled.div.attrs({
       z-index: 21;
       background-color: #b0b8bc;
     }
+    @media only screen and (max-width: 480px) {
+      content: "";
+      display: block;
+      width: 70%;
+      height: 1px;
+      position: absolute;
+      top: 68%;
+      left: 64px;
+      z-index: 21;
+      background-color: #b0b8bc;
+    }
   }
   & {
     img {
@@ -66,13 +77,14 @@ export const SocialLink = styled(Link).attrs({
 `;
 
 export const Social = styled.a.attrs({
-  className: `mr-10 font-bold text-black hover:text-yellow-500 z-10`,
+  className: `sm:mr-10 mr-4 font-bold text-black hover:text-yellow-500 z-10`,
 })``;
 
 export const NavLink = styled(Link).attrs({
-  className: " mr-16 font-bold text-black hover:text-yellow-500 z-10 ",
+  className: `mr-8 sm:mr-16 font-bold text-black hover:text-yellow-500 z-10
+  flex flex-col items-center sm:inline-block`,
 })``;
 export const NavMenu = styled.div.attrs({
-  className:
-    "md:ml-auto flex flex-wrap items-center md:mt-0 md:text-base text-sm mt-4 justify-center",
+  className: `md:ml-auto flex flex-wrap items-center md:mt-0 md:text-base sm:text-sm mt-4 
+    text-xs justify-center `,
 })``;
