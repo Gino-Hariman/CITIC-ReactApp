@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Navbar } from "./components/landing-page/Navbar";
+import { BrowserRouter as Router } from "react-router-dom";
+import Hero from "./components/landing-page/Hero";
 
 function App() {
+  // const PageNotFound = () => {
+  //   <div>404!</div>;
+  // };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Hero />
+      {/* <Route component={PageNotFound} /> */}
+    </Router>
   );
 }
 
