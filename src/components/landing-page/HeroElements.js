@@ -25,56 +25,77 @@ export const Section = styled.div.attrs({
     h1 {
       ${tw`font-medium relative text-xs mb-6 md:text-base sm:text-sm`}
     }
-    h1:after {
-      @media only screen and (min-width: 1025px) {
-        content: "";
-        display: block;
-        width: 20%;
-        height: 2px;
-        position: absolute;
-        right: 20%;
-        top: 50%;
-        background-color: white;
-      }
+     {
+      h1:after {
+        @media only screen and (min-width: 1201px) {
+          content: "";
+          display: block;
+          width: 20%;
+          height: 2px;
+          position: absolute;
+          right: 20%;
+          top: 50%;
+          background-color: white;
+        }
+        @media only screen and (max-width: 1200px) {
+          content: "";
+          display: block;
+          width: 20%;
+          height: 2px;
+          position: absolute;
+          right: 10%;
+          top: 50%;
+          background-color: white;
+        }
 
-      @media only screen and (min-width: 1200px) {
-        content: "";
-        display: block;
-        width: 33%;
-        height: 2px;
-        position: absolute;
-        right: 15%;
-        top: 50%;
-        background-color: white;
-      }
+        @media only screen and (max-width: 1000px) {
+          content: "";
+          display: block;
+          width: 15%;
+          height: 2px;
+          position: absolute;
+          right: 0%;
+          top: 50%;
+          background-color: white;
+        }
+        @media only screen and (max-width: 810px) {
+          content: "";
+          display: block;
+          width: 14%;
+          height: 2px;
+          position: absolute;
+          right: 10%;
+          top: 50%;
+          background-color: white;
+        }
+        @media only screen and (max-width: 750px) {
+          content: "";
+          display: block;
+          width: 14%;
+          height: 2px;
+          position: absolute;
+          right: 0%;
+          top: 50%;
+          background-color: white;
+        }
 
-      @media only screen and (max-width: 1024px) {
-        content: "";
-        display: block;
-        width: 14%;
-        height: 2px;
-        position: absolute;
-        right: 10%;
-        top: 50%;
-        background-color: white;
-      }
+        @media only screen and (max-width: 400px) {
+          content: "";
+          display: none;
+          width: 15%;
+          height: 2px;
+          position: absolute;
+          right: 0%;
+          top: 50%;
+          background-color: white;
+        }
 
-      @media only screen and (min-width: 451px) {
-        content: "";
-        display: block;
-        width: 15%;
-        height: 2px;
-        position: absolute;
-        right: 0%;
-        top: 50%;
-        background-color: white;
-      }
-
-      @media only screen and (max-width: 450px) {
-        content: "";
-        display: block;
-        width: 0;
-        height: 2px;
+        @media only screen and (max-width: 325px) {
+          content: "";
+          display: none;
+          width: 0;
+          height: 2px;
+        }
       }
     }
     p {

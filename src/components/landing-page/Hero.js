@@ -12,7 +12,7 @@ const Hero = () => {
       {/* HeroOne dari HeroElement * Bg1 */}
       <Container>
         <img className="object-cover" src={Bg1} alt="bg-hero-1" />
-        <Section>
+        <Section className='hero'>
           <h1>Kuy beli ticket dengan mudah</h1>
           <p>
             Pakai CITIC dapatkan tiket dan teman baru menonton di bioskop mudah

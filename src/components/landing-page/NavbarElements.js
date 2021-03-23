@@ -4,7 +4,7 @@ import { NavLink as Link } from "react-router-dom";
 
 export const Nav = styled.nav.attrs({
   className: `container  mx-auto flex justify-between items-center h-16 text-white 
-  bg-transparent font-sans relative shadow-sm z-10 fixed`,
+  bg-transparent font-sans relative z-10 fixed`,
 })``;
 
 export const NavLogo = styled(Link).attrs({
